@@ -5,12 +5,11 @@ import styles from './nav.styl';
 export default class Nav extends React.Component {
   render() {
     return (
-      <div>
-        <a href="">Link 1</a>
-        <a href="">Link 2</a>
-        <a href="">Link 3</a>
-        <a href="">Link 4</a>
-      </div>
+      <ul>
+        <li><a href="">about</a></li>
+        <li><a href="">code snippets</a></li>
+        <li><a href="">contact</a></li>
+      </ul>
     );
   }
 }

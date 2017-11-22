@@ -6,7 +6,7 @@ export default class Main extends React.Component {
   render() {
     return (
       <div className={styles.main}>
-        yeah boiiiiiiiiii
+        <p>yeah boiiiiiiiiii</p>
       </div>
     );
   }
