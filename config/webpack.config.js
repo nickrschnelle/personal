@@ -5,8 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './src/index.html',
-  filename: 'index.html',
-  inject: 'body'
+  filename: 'index.html'
 });
 
 const extractStylus = new ExtractTextPlugin({
@@ -41,8 +40,8 @@ module.exports = {
             {
               loader: 'css-loader',
               query: {
-                  modules: true,
-                  localIdentName: '[name]__[local]___[hash:base64:5]'
+                modules: true,
+                localIdentName: '[name]__[local]___[hash:base64:5]'
               }
             },
             'postcss-loader'
@@ -58,10 +57,10 @@ module.exports = {
             {
               loader: 'css-loader',
               query: {
-                  modules: true,
-                  sourceMap: true,
-                  importLoaders: 2,
-                  localIdentName: '[name]__[local]___[hash:base64:5]'
+                modules: true,
+                sourceMap: true,
+                importLoaders: 2,
+                localIdentName: '[name]__[local]___[hash:base64:5]'
               }
             },
             'stylus-loader'
@@ -71,9 +70,7 @@ module.exports = {
     ]
   },
   plugins: [
-
     extractStylus,
-
     HtmlWebpackPluginConfig
   ]
 };

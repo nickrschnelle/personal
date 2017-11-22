@@ -23,7 +23,7 @@
     "react-dom": "^16.0.0"
   },
   "scripts": {
-    "start": "npm run build && webpack-dev-server --config config/webpack.config.js",
-    "build": "./node_modules/.bin/webpack --config config/webpack.config.js"
+    "start": "webpack-dev-server --config config/webpack.config.js",
+    "build": "webpack --config config/webpack.config.js"
   }
 }
