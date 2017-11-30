@@ -10,7 +10,7 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <div className={styles.wrapper}>
-          <Route exact path="/" render={() => <Core />}/>
+          <Route path="/" render={() => <Core />}/>
         </div>
       </BrowserRouter>
     );
