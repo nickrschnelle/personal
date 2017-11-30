@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Link } from 'react-router-dom';
+
 import styles from './nav.styl';
 
 export default class Nav extends React.Component {
@@ -7,9 +9,9 @@ export default class Nav extends React.Component {
     return (
       <nav>
         <ul>
-          <li><a href="">about</a></li>
-          <li><a href="">code snippets</a></li>
-          <li><a href="">contact</a></li>
+          <li><Link to="/about">about</Link></li>
+          <li><Link to="/snippets">code snippets</Link></li>
+          <li><Link to="/contacts">contact</Link></li>
         </ul>
       </nav>
     );
