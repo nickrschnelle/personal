@@ -9,10 +9,11 @@ export default class Header extends React.Component {
     return (
       <header>
         <div className={styles.homeLink}>
-          <p><a href="">nick schnelle</a></p>
+          <p><a href="">n<span>ick </span>s<span>chnelle</span></a></p>
         </div>
         <Nav />
         <div className={styles.social}></div>
+        <div className={styles.hamburger}>hamburger</div>
       </header>
     );
   }

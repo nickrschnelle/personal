@@ -2,7 +2,7 @@
 
 header
   background-color gunmetal
-  height 110px
+  height 50px
   display flex
   justify-content space-between
   align-items center
@@ -18,3 +18,15 @@ header
 
   .homeLink, .social
     flex 1
+  .homeLink span
+    display none
+  nav, .social
+    display none
+  @media (min-width: min-screen-tab)
+    height 110px
+    .homeLink span
+      display inline
+    .hamburger
+      display none
+    nav, .social
+      display block
